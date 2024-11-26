@@ -12,8 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { Link } from 'react-scroll'; // Para el desplazamiento suave
-import { useNavigate } from 'react-router-dom'; // Para redirigir
+import { Link } from 'react-scroll'; 
+import { useNavigate } from 'react-router-dom'; 
 
 const pages = [
   { name: 'Inicio', id: 'inicio' },
@@ -26,7 +26,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const navigate = useNavigate(); // Hook para redirigir
+  const navigate = useNavigate(); 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -45,8 +45,8 @@ function ResponsiveAppBar() {
   };
 
   const handleLogout = () => {
-    navigate('/'); // Redirige al inicio de sesión (ruta raíz o donde esté tu login)
-    handleCloseUserMenu(); // Cierra el menú de usuario
+    navigate('/'); 
+    handleCloseUserMenu(); 
   };
 
   return (
